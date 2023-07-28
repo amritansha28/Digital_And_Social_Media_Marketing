@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Amritansh Anand">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”robots” content="index, follow">
+    <title>Manju's Lifestyle Form</title>
+    <style>
+        html{
+            background-image: url(home.webp);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 100%;
+            width: 100%;
+        }
+        table{
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 2rem;
+            background-color: white;
+            color: black;
+            padding: 1.5rem;
+            opacity: 0.8;
+            font-size: 1.5rem;
+            margin: 2rem;
+            font-weight: bold;
+        }
+        .follow{
+            font-size: 1rem;
+        }
+        button{
+            font-size: 1.5rem;
+            background-color: white;
+            color: black;
+            border-radius: 0.7rem;
+            padding: 0.7rem;
+            font-weight: bold;
+            font-family:'Times New Roman', Times, serif ;
+            border: 0.1rem solid black;
+            width: 50%;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        .submit{
+            text-align: center;
+        }
+        td{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        tr{
+            height: 1.5rem;
+        }
+        input[type="text"],input[type="number"],input[type="email"],textarea,select{
+            font-size: 1rem;
+            background-color: black;
+            color: white;
+            border-radius: 1rem;
+            padding: 0.7rem;
+            font-weight: bold;
+            width: 25rem;
+        }
+        select{
+            height: 3rem;
+            width: 100%;
+        }
+        thead{
+            font-size: 3rem;
+            font-weight: bold;
+            font-style: italic;
+        }
+        textarea{
+            width: 97%;
+        }
+        div{
+            text-align: right;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 1rem;
+        }
+        div:hover{
+            letter-spacing: 0.5rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        @media only screen and (max-width : 800px) {
+            table{
+                font-family: 'Times New Roman', Times, serif;
+                border-radius: 0.5rem;
+                background-color: white;
+                color: black;
+                opacity: 0.8;
+                font-size: 0.8rem;
+                margin: 0.1rem;
+                font-weight: bold;
+                width: 100%;
+            }
+            .follow{
+                font-size: 0.6rem;
+            }
+            button{
+                font-size: 1rem;
+                background-color: white;
+                color: black;
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif ;
+                border: 0.1rem solid black;
+                width: 50%;
+            }
+            button:hover{
+                background-color: black;
+                color: white;
+            }
+            .submit{
+                text-align: center;
+            }
+            td{
+                padding-left: 0.1rem;
+                padding-right: 0.1rem;
+            }
+            tr{
+                height: 0.5rem;
+            }
+            input[type="text"],input[type="number"],input[type="email"],textarea,select{
+                font-size: 0.9rem;
+                background-color: black;
+                color: white;
+                border-radius: 0.4rem;
+                padding: 0.4rem;
+                font-weight: bold;
+                width: 8rem;
+            }
+            select{
+                height: 2rem;
+                width: 100%;
+            }
+            thead{
+                font-size: 2rem;
+                font-weight: bold;
+                font-style: italic;
+            }
+            textarea{
+                width: 97%;
+            }
+        }
+        @media only screen and (max-width : 350px) {
+            table{
+                font-family: 'Times New Roman', Times, serif;
+                border-radius: 0.5rem;
+                background-color: white;
+                color: black;
+                opacity: 0.8;
+                font-size: 1rem;
+                margin: 0.1rem;
+                font-weight: bold;
+                width: 100%;
+            }
+            .follow{
+                font-size: 0.6rem;
+            }
+            button{
+                font-size: 1rem;
+                background-color: white;
+                color: black;
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif ;
+                border: 0.1rem solid black;
+                width: 50%;
+            }
+            button:hover{
+                background-color: black;
+                color: white;
+            }
+            .submit{
+                text-align: center;
+            }
+            td{
+                padding-left: 0rem;
+                padding-right: 0rem;
+            }
+            tr{
+                height: 0.6rem;
+            }
+            input[type="text"],input[type="number"],input[type="email"],textarea,select{
+                font-size: 0.9rem;
+                background-color: black;
+                color: white;
+                border-radius: 0.4rem;
+                padding: 0.4rem;
+                font-weight: bold;
+                width: 6rem;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            select{
+                height: 2rem;
+                width: 100%;
+            }
+            thead{
+                font-size: 2rem;
+                font-weight: bold;
+                font-style: italic;
+            }
+            textarea{
+                width: 94%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div><a href="https://manjulifestyle.github.io/designerboutique/">HOME</a></div>
+    <form name="Take a moment" method="POST" data-netlify="true" onsubmit="submit">
+        <center>
+            <table>
+                <thead><td class="submit" colspan="2">Manju's Lifestyle<td></thead>
+                <tr></tr>
+                <tr>
+                    <td><label for="fname">F<span class="follow">IRSTNAME:</span></label></td>
+                    <td><label for="lname">L<span class="follow">ASTNAME:</span></label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="fname" name="fname" placeholder="Enter firstname"></td>
+                    <td><input type="text" id="lname" name="lname" placeholder="Enter lastname"></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><label for="phone">P<span class="follow">HONE:</span></label></td>
+                    <td><label for="age">A<span class="follow">GE:</span></label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="phone" name="phone" placeholder="Enter phone number" min="1111111111" max="9999999999" required></td>
+                    <td><input type="number" id="age" name="age" min="10" max="100" placeholder="Enter age" required></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><label for="email">E<span class="follow">MAIL:</span></label></td>
+                    <td><label for="pincode">P<span class="follow">INCODE:</span></label></td>
+                </tr>
+                <tr>
+                    <td><input type="email" id="email" name="email" placeholder="Enter email"required></td>
+                    <td><input type="number" id="pincode" name="pincode" placeholder="Enter pincode" required></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><label for="add">A<span class="follow">DDRESS:</span></label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea id="add" name="add" placeholder="Enter address" required></textarea></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><label for="message">M<span class="follow">ESSAGE:</span></label></td>
+                    <td><label for="rate">R<span class="follow">ATE US:</span></label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="message" name="message" placeholder="Enter message" required></td>
+                    <td>
+                        <select id="message" name="message" required>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td class="submit" colspan="2"><button type="Submit">SUBMIT</button></td>
+                </tr>
+            </table>
+        </center>
+    </form>
+</body>
+</html>
